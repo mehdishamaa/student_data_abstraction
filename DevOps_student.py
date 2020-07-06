@@ -18,8 +18,8 @@ class Devops(Student):
         print(self.name + "is at home")
 
     def study(self):
-        print(self.ability + 5)
+        self.ability = self.ability + 5
+        print("Student has finished studying, ability is now:", self.ability)
 
 me = Devops("Mehdi","21", "DevOps", 5)
 
-print(me.study())
