@@ -17,6 +17,8 @@ class Devops(Student):
     def __home(self):
         print(self.name + "is at home")
 
+# Below we have added a new function to this class. The study function increases the students ability.
+
     def study(self):
         self.ability = self.ability + 5
         print("Student has finished studying, ability is now:", self.ability)
