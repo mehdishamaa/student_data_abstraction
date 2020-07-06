@@ -11,11 +11,15 @@ class Student():
     def lunch(self):
         print(self.name + " " + "is on lunch")
 
-    def __home(self):
-        print(self.name + "is at home")
+    def test_date(self):
+        pass
 
+# The above function is a template for a students test date. However, only DevOps students have an upcoming
+# so we need to write 'pass' here.
 
 m = Student("Mehdi", "21", "DevOps")
+
+
 
 
 

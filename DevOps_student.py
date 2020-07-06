@@ -5,11 +5,11 @@ from student_data import Student
 
 class Devops(Student):
 
-    def __init__(self, name, age, course, ability):
+    def __init__(self, name, age, course, grade):
         self.name = name
         self.age = age
         self.course = course
-        self.ability = ability
+        self.grade = grade
 
     def lunch(self):
         print(self.name + " " + "is on lunch")
@@ -23,5 +23,11 @@ class Devops(Student):
         self.ability = self.ability + 5
         print("Student has finished studying, ability is now:", self.ability)
 
-me = Devops("Mehdi","21", "DevOps", 5)
+    def test_date(self):
+        print("Your test date is next Friday!")
+
+
+m = Devops("Mehdi","21", "DevOps", 5)
+
+print(m.test_date())
 
